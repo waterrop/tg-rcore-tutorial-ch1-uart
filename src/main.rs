@@ -26,7 +26,7 @@
 
 // 引入 SBI 调用库，提供 console_putchar（输出字符）和 shutdown（关机）功能
 // 启用 nobios 特性后，tg_sbi 内建了 M-mode 启动代码，无需外部 SBI 固件
-use tg_rcore_tutorial_uart::uart_puts;
+use tg_rcore_tutorial_uart4::uart_puts;
 use tg_sbi::shutdown;
 
 /// S 态程序入口点。
