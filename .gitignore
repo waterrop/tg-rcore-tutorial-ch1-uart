@@ -1,4 +1,5 @@
 target
+tg-rcore-tutorial-uart
 *.asm
 *.bin
 *.img

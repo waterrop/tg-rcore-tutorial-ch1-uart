@@ -1,7 +1,9 @@
 [package]
-name = "tg-rcore-tutorial-uart"
-version = "0.1.0"
+name = "tg-rcore-tutorial-uart4"
+repository = "https://github.com/waterrop/tg-rcore-tutorial-uart"
+version = "0.1.0-preview.1"
 edition = "2024"
-
+license = "GPL-3.0"
+description = "RISC-V UART driver for rcore tutorial"
 [lib]
 path = "src/lib.rs"

@@ -17,6 +17,7 @@ authors = [
     "YdrMaster <ydrml@hotmail.com>",
     "Yifan Wang<w-yf22@mails.tsinghua.edu.cn>",
     "Yu Chen <yuchen@tsinghua.edu.cn>",
+    "Bolin Li <3127221674@qq.com>"
 ]
 build = "build.rs"
 autolib = false
@@ -24,7 +25,8 @@ autobins = false
 autoexamples = false
 autotests = false
 autobenches = false
-homepage = "https://github.com/rcore-os/tg-rcore-tutorial-ch1/tree/test"
+description = "一个RISC-V串口驱动库"
+repository = "https://github.com/waterrop/tg-rcore-tutorial-ch1-uart"
 readme = "README.md"
 keywords = [
     "rcore",
@@ -43,10 +45,9 @@ categories = [
     "embedded",
 ]
 license = "GPL-3.0"
-repository = "https://github.com/rcore-os/tg-rcore-tutorial-ch1-uart"
 
 [[bin]]
-name = "tg-rcore-tutorial-ch1-uart"
+name = "tg-rcore-tutorial-ch1-uart4"
 path = "src/main.rs"
 
 [dependencies.tg-sbi]
@@ -54,8 +55,8 @@ version = "0.4.8"
 features = ["nobios"]
 package = "tg-rcore-tutorial-sbi"
 
-[dependencies.tg-rcore-tutorial-uart]
-path = "tg-rcore-tutorial-uart"
+[dependencies]
+tg-rcore-tutorial-uart = "0.1.0-preview.1"
 
 [profile.dev]
 panic = "abort"
