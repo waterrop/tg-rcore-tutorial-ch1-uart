@@ -56,7 +56,7 @@ features = ["nobios"]
 package = "tg-rcore-tutorial-sbi"
 
 [dependencies]
-tg-rcore-tutorial-uart4 = "0.1.0-preview.1"
+tg-rcore-tutorial-uart4 = { version = "0.1.0-preview.1", registry = "crates-io" }
 
 [profile.dev]
 panic = "abort"
